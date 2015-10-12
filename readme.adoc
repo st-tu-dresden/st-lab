@@ -10,6 +10,7 @@ Here are the additional steps that will be executed if the build is run with the
 * the JavaDoc of the project is build, packaged and attached to the project
 * the reference documentation (i.e. all `*.adoc` files in `src/main/asciidoc`) will be rendered into HTML and PDF
 * both JavaDoc and reference documentation are packaged into a zip and attached to the produced artifacts
+* jacoco report for unit test code coverage is generated
 
 == Resources
 
