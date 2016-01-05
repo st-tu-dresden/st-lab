@@ -4,7 +4,7 @@
 
 	<groupId>de.tudresden.inf.st.lab</groupId>
 	<artifactId>st-lab</artifactId>
-	<version>1.0.1.BUILD-SNAPSHOT</version>
+	<version>1.0.1.RELEASE</version>
 	<packaging>pom</packaging>
 
 	<name>Software Engineering Lab - Infrastructure</name>
