@@ -6,10 +6,10 @@
 
 	<name>Software Engineering Lab - Resources</name>
 
-    <parent>
-        <groupId>de.tudresden.inf.st.lab</groupId>
-        <artifactId>st-lab</artifactId>
-        <version>1.1.0.BUILD-SNAPSHOT</version>
-    </parent>
+	<parent>
+		<groupId>de.tudresden.inf.st.lab</groupId>
+		<artifactId>st-lab</artifactId>
+		<version>1.1.0.BUILD-SNAPSHOT</version>
+	</parent>
 
 </project>
