@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.tudresden.inf.st.lab</groupId>
 	<artifactId>st-lab-parent</artifactId>
-	<version>1.1.0.BUILD-SNAPSHOT</version>
+	<version>1.1.0.RELEASE</version>
 
 	<packaging>pom</packaging>
 
@@ -108,7 +107,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>1.1.0.BUILD-SNAPSHOT</version>
+								<version>1.1.0.RELEASE</version>
 							</dependency>
 						</dependencies>
 						<executions>
@@ -178,4 +177,8 @@
 		</repository>
 	</distributionManagement>
 
+
+  <scm>
+    <tag>1.1.0.RELEASE</tag>
+  </scm>
 </project>
