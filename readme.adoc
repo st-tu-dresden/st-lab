@@ -15,3 +15,7 @@ Here are the additional steps that will be executed if the build is run with the
 == Resources
 
 The `resources` module contains the assembly descriptor to package Javadoc and reference documentation via the assembly plugin declared in the parent project.
+
+== Releases
+
+Perform `mvn release:prepare -DscmCommentPrefix="$releaseTicketId - "`.
