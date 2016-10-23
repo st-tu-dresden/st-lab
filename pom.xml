@@ -24,6 +24,11 @@
 		</extensions>
 	</build>
 
+	<scm>
+		<url>https://github.com/st-tu-dresden/st-lab</url>
+		<connection>scm:git:https://github.com/st-tu-dresden/st-lab</connection>
+	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>salespoint</id>
