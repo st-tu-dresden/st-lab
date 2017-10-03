@@ -1,0 +1,51 @@
+<jqa:jqassistant-rules
+	xmlns:jqa="http://www.buschmais.com/jqassistant/core/analysis/rules/schema/v1.1">
+
+	<group id="salespoint:Default">
+		<includeConcept refId="salespoint:EnableSalespoint" />
+		<includeConcept refId="general:Newable" />
+		<includeConstraint refId="salespoint:NewablesMustNotReferToInjectables" />
+		<includeGroup refId="spring-boot:Strict" />
+	</group>
+
+	<concept id="salespoint:EnableSalespoint">
+		<description>Labels all types annotated with "@org.springframework.context.annotation.Configuration" with "Spring", "Configuration" and "Component".</description>
+		<cypher><![CDATA[
+			MATCH
+				(configuration:Type)-[:ANNOTATED_BY]->()-[:OF_TYPE]->(annotationType:Type)
+			WHERE
+				annotationType.fqn = "org.salespointframework.EnableSalespoint"
+			SET
+				configuration:Spring:Boot:Application:Configuration:Component
+			RETURN
+				configuration as Configuration
+		]]></cypher>
+	</concept>
+
+	<concept id="general:Newable">
+		<requiresConcept refId="jpa2:Entity"/>
+		<description>Labels all JPA related types as Newables</description>
+		<cypher><![CDATA[
+			MATCH
+				(type:Type)
+			WHERE
+				type:Jpa:Entity or type:Jpa:Embeddable or type:Jpa:EmbeddedId or type:Jpa:MappedSuperclass
+			SET
+				type:Newable
+			RETURN
+				type as Type
+		]]></cypher>
+	</concept>
+
+	<constraint id="salespoint:NewablesMustNotReferToInjectables">
+
+		<description>Newables must not refer to injectables.</description>
+		<cypher><![CDATA[
+			MATCH
+				(source:Type:Newable)-[:DEPENDS_ON]->(target:Type:Injectable)
+			RETURN
+				source as Source, target as Target
+		]]></cypher>
+	</constraint>
+
+</jqa:jqassistant-rules>

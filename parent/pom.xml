@@ -173,6 +173,59 @@
 			</build>
 		</profile>
 
+		<profile>
+
+			<id>jqa</id>
+
+			<properties>
+				<skipTests>true</skipTests>
+			</properties>
+
+			<build>
+
+				<plugins>
+
+					<!-- Run jQAssistant Spring rules -->
+
+					<plugin>
+						<groupId>com.buschmais.jqassistant</groupId>
+						<artifactId>jqassistant-maven-plugin</artifactId>
+						<version>1.4.0</version>
+						<executions>
+							<execution>
+								<id>default</id>
+								<goals>
+									<goal>scan</goal>
+									<goal>analyze</goal>
+								</goals>
+								<configuration>
+									<failOnSeverity>MAJOR</failOnSeverity>
+									<warnOnSeverity>MINOR</warnOnSeverity>
+									<groups>
+										<group>salespoint:Default</group>
+									</groups>
+								</configuration>
+							</execution>
+						</executions>
+						<dependencies>
+							<dependency>
+								<groupId>com.buschmais.jqassistant.plugin</groupId>
+								<artifactId>spring</artifactId>
+								<version>1.4</version>
+							</dependency>
+							<dependency>
+								<groupId>de.tudresden.inf.st.lab</groupId>
+								<artifactId>st-lab-resources</artifactId>
+								<version>2.0.0.BUILD-SNAPSHOT</version>
+							</dependency>
+						</dependencies>
+					</plugin>
+
+				</plugins>
+
+			</build>
+		</profile>
+
 	</profiles>
 
 	<build>
