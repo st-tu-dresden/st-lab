@@ -73,6 +73,7 @@
 								<configuration>
 									<doctype>book</doctype>
 									<backend>html5</backend>
+									<preserveDirectories>true</preserveDirectories>
 									<outputDirectory>${project.build.directory}/generated-docs/html</outputDirectory>
 									<sectids>false</sectids>
 									<sourceHighlighter>prettify</sourceHighlighter>
@@ -92,6 +93,7 @@
 								</goals>
 								<configuration>
 									<backend>pdf</backend>
+									<preserveDirectories>true</preserveDirectories>
 									<sourceHighlighter>coderay</sourceHighlighter>
 									<outputDirectory>${project.build.directory}/generated-docs/pdf</outputDirectory>
 								</configuration>
