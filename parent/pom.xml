@@ -20,6 +20,16 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>de.tudresden.inf.st</groupId>
+				<artifactId>salespoint-framework</artifactId>
+				<version>6.4.0.RELEASE</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<profiles>
 
 		<profile>
