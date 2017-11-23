@@ -3,7 +3,7 @@
 
 	<groupId>de.tudresden.inf.st.lab</groupId>
 	<artifactId>st-lab-parent</artifactId>
-	<version>1.2.2.RELEASE</version>
+	<version>1.2.3.BUILD-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
@@ -123,7 +123,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>1.2.2.RELEASE</version>
+								<version>1.2.3.BUILD-SNAPSHOT</version>
 							</dependency>
 						</dependencies>
 						<executions>
@@ -192,8 +192,4 @@
 			<url>sftp://st.inf.tu-dresden.de:44/home/salespnt/salespoint/repository</url>
 		</repository>
 	</distributionManagement>
-
-  <scm>
-    <tag>1.2.2.RELEASE</tag>
-  </scm>
 </project>
