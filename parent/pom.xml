@@ -18,8 +18,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<salespoint.version>7.0.0.BUILD-SNAPSHOT</salespoint.version>
 		<moduliths.version>1.0.0.M1</moduliths.version>
+		<salespoint.version>7.0.0.RELEASE</salespoint.version>
 	</properties>
 
 	<dependencyManagement>
