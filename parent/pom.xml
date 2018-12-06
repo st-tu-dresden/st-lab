@@ -18,7 +18,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<moduliths.version>1.0.0.M1</moduliths.version>
+		<moduliths.version>1.0.0.M3</moduliths.version>
 		<salespoint.version>7.1.0.BUILD-SNAPSHOT</salespoint.version>
 	</properties>
 
