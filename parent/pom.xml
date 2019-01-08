@@ -92,6 +92,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>de.olivergierke.moduliths</groupId>
 			<artifactId>moduliths-test</artifactId>
 			<version>${moduliths.version}</version>
