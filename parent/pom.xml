@@ -20,6 +20,7 @@
 		<java.version>1.8</java.version>
 		<moduliths.version>1.0.0.M3</moduliths.version>
 		<salespoint.version>7.1.0.RELEASE</salespoint.version>
+		<junit-jupiter.version>5.4.0-M1</junit-jupiter.version>
 		<spring-data-releasetrain.version>Moore-M1</spring-data-releasetrain.version>
 	</properties>
 
@@ -63,19 +64,7 @@
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-params</artifactId>
+			<artifactId>junit-jupiter</artifactId>
 			<scope>test</scope>
 		</dependency>
 
