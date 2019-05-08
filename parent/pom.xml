@@ -88,7 +88,7 @@
 
 		<dependency>
 			<groupId>de.olivergierke.moduliths</groupId>
-			<artifactId>moduliths-test</artifactId>
+			<artifactId>moduliths-docs</artifactId>
 			<version>${moduliths.version}</version>
 			<scope>test</scope>
 		</dependency>
