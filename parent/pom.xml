@@ -20,8 +20,6 @@
 		<java.version>1.8</java.version>
 		<moduliths.version>1.0.0.BUILD-SNAPSHOT</moduliths.version>
 		<salespoint.version>7.2.0.BUILD-SNAPSHOT</salespoint.version>
-		<junit-jupiter.version>5.4.2</junit-jupiter.version>
-		<spring-data-releasetrain.version>Moore-BUILD-SNAPSHOT</spring-data-releasetrain.version>
 	</properties>
 
 	<dependencyManagement>
