@@ -19,7 +19,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<moduliths.version>1.0.0.RC2</moduliths.version>
-		<salespoint.version>7.2.0.BUILD-SNAPSHOT</salespoint.version>
+		<salespoint.version>7.2.0.RELEASE</salespoint.version>
 	</properties>
 
 	<dependencyManagement>
