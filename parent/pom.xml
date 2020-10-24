@@ -18,8 +18,8 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<moduliths.version>1.0.0.BUILD-SNAPSHOT</moduliths.version>
-		<salespoint.version>7.2.0.RELEASE</salespoint.version>
+		<moduliths.version>1.0.0</moduliths.version>
+		<salespoint.version>7.3.0</salespoint.version>
 	</properties>
 
 	<dependencyManagement>
@@ -81,6 +81,13 @@
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.moduliths</groupId>
+			<artifactId>moduliths-test</artifactId>
+			<version>${moduliths.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -370,8 +377,8 @@
 	<pluginRepositories>
 
 		<pluginRepository>
-			<id>spring-libs-milestone</id>
-			<url>https://repo.spring.io/libs-milestone</url>
+			<id>spring-libs-release</id>
+			<url>https://repo.spring.io/libs-release</url>
 		</pluginRepository>
 
 		<pluginRepository>
