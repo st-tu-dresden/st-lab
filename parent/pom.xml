@@ -12,13 +12,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.0.RC1</version>
+		<version>2.3.4.RELEASE</version>
 		<relativePath />
 	</parent>
 
 	<properties>
 		<java.version>11</java.version>
-		<moduliths.version>1.0.0.RC2</moduliths.version>
+		<moduliths.version>1.0.0.BUILD-SNAPSHOT</moduliths.version>
 		<salespoint.version>7.2.0.RELEASE</salespoint.version>
 	</properties>
 
@@ -85,7 +85,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>de.olivergierke.moduliths</groupId>
+			<groupId>org.moduliths</groupId>
 			<artifactId>moduliths-docs</artifactId>
 			<version>${moduliths.version}</version>
 			<scope>test</scope>
