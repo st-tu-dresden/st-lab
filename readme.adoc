@@ -18,4 +18,8 @@ The `resources` module contains the assembly descriptor to package Javadoc and r
 
 == Releases
 
-Perform `mvn release:prepare -DscmCommentPrefix="$releaseTicketId - "`.
+```
+$ mvn release:prepare
+Edit commit messages to follow the usual pattern.
+$ mvn release:perform
+```
