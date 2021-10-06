@@ -19,7 +19,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<moduliths.version>1.0.0</moduliths.version>
-		<salespoint.version>7.3.0</salespoint.version>
+		<salespoint.version>7.4.0</salespoint.version>
 	</properties>
 
 	<dependencyManagement>
