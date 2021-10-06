@@ -18,7 +18,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<moduliths.version>1.0.0</moduliths.version>
+		<moduliths.version>1.2.1</moduliths.version>
 		<salespoint.version>7.4.0</salespoint.version>
 	</properties>
 
