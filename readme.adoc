@@ -8,7 +8,7 @@ The kickstart project refers to a parent project that contains Maven configurati
 Here are the additional steps that will be executed if the build is run with the `ci` profile enabled (`mvn clean install -Pci`).
 
 * the JavaDoc of the project is build, packaged and attached to the project
-* the reference documentation (i.e. all `*.adoc` files in `src/main/asciidoc`) will be rendered into HTML and PDF
+* the reference documentation (i.e. all `….adoc` files in `src/main/asciidoc`) will be rendered into HTML and PDF
 * both JavaDoc and reference documentation are packaged into a zip and attached to the produced artifacts
 * JaCoCo report for unit test code coverage is generated
 
@@ -19,7 +19,9 @@ The `resources` module contains the assembly descriptor to package Javadoc and r
 == Releases
 
 ```
-$ mvn release:prepare
+$ mvn release:prepare \
+-DscmReleaseCommitComment="$ticketId - Release version $version." \
+-DscmDevelopmentCommitComment="$ticketId - Prepare next development iteration."
 Edit commit messages to follow the usual pattern.
 $ mvn release:perform
 ```
