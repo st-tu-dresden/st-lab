@@ -325,6 +325,12 @@
 
 	</build>
 
+	<scm>
+		<tag>HEAD</tag>
+		<connection>scm:git:https://github.com/st-tu-dresden/st-lab</connection>
+		<url>https://github.com/st-tu-dresden/st-lab</url>
+	</scm>
+
 	<distributionManagement>
 		<repository>
 			<id>salespoint</id>
@@ -363,10 +369,4 @@
 
 	</pluginRepositories>
 
-
-  <scm>
-    <tag>HEAD</tag>
-    <connection>scm:git:https://github.com/st-tu-dresden/st-lab</connection>
-    <url>https://github.com/st-tu-dresden/st-lab</url>
-  </scm>
 </project>
