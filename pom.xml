@@ -3,7 +3,7 @@
 
 	<groupId>de.tudresden.inf.st.lab</groupId>
 	<artifactId>st-lab</artifactId>
-	<version>3.0.0-SNAPSHOT</version>
+	<version>3.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>Software Engineering Lab - Infrastructure</name>
@@ -40,7 +40,7 @@
 	<scm>
 		<url>https://github.com/st-tu-dresden/st-lab</url>
 		<connection>scm:git:https://github.com/st-tu-dresden/st-lab</connection>
-		<tag>HEAD</tag>
+		<tag>3.0.0</tag>
 	</scm>
 
 	<distributionManagement>
