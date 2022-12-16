@@ -20,6 +20,7 @@
 		<java.version>17</java.version>
 		<spring-modulith.version>0.1.0-SNAPSHOT</spring-modulith.version>
 		<salespoint.version>8.1.0-SNAPSHOT</salespoint.version>
+		<sonar-plugin.version>3.9.1.2184</sonar-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -320,6 +321,16 @@
 			</plugin>
 
 		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.sonarsource.scanner.maven</groupId>
+					<artifactId>sonar-maven-plugin</artifactId>
+					<version>${sonar-plugin.version}</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 
 	</build>
 
