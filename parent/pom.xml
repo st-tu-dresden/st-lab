@@ -325,7 +325,7 @@
 				<version>3.1.0</version>
 				<executions>
 					<execution>
-						<id>enforce-junit4-ban</id>
+						<id>ban-problematic-dependencies</id>
 						<goals>
 							<goal>enforce</goal>
 						</goals>
@@ -336,6 +336,12 @@
 										<exclude>junit:junit</exclude>
 									</excludes>
 									<message>JUnit 4 must not be used, please use the already bundled JUnit 5</message>
+								</bannedDependencies>
+								<bannedDependencies>
+									<excludes>
+										<exclude>javax.validation:validation-api</exclude>
+									</excludes>
+									<message>javax.validation must not be used, please use the already bundled jakarta.validation</message>
 								</bannedDependencies>
 							</rules>
 							<fail>true</fail>
