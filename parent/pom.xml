@@ -3,7 +3,7 @@
 
 	<groupId>de.tudresden.inf.st.lab</groupId>
 	<artifactId>st-lab-parent</artifactId>
-	<version>4.0.0-SNAPSHOT</version>
+	<version>4.0.0</version>
 
 	<packaging>pom</packaging>
 
@@ -195,7 +195,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>4.0.0-SNAPSHOT</version>
+								<version>4.0.0</version>
 							</dependency>
 						</dependencies>
 						<executions>
@@ -289,7 +289,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>4.0.0-SNAPSHOT</version>
+								<version>4.0.0</version>
 							</dependency>
 						</dependencies>
 					</plugin>
@@ -371,7 +371,7 @@
 	</build>
 
 	<scm>
-		<tag>HEAD</tag>
+		<tag>4.0.0</tag>
 		<connection>scm:git:https://github.com/st-tu-dresden/st-lab</connection>
 		<url>https://github.com/st-tu-dresden/st-lab</url>
 	</scm>
