@@ -19,7 +19,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<spring-modulith.version>0.1.0-SNAPSHOT</spring-modulith.version>
-		<salespoint.version>8.1.0-SNAPSHOT</salespoint.version>
+		<salespoint.version>9.0.0</salespoint.version>
 		<sonar-plugin.version>3.9.1.2184</sonar-plugin.version>
 	</properties>
 
