@@ -159,12 +159,17 @@
 								<artifactId>asciidoctorj</artifactId>
 								<version>2.5.10</version>
 							</dependency>
+							<dependency>
+								<groupId>org.asciidoctor</groupId>
+								<artifactId>asciidoctorj-diagram</artifactId>
+								<version>2.2.11</version>
+							</dependency>
 						</dependencies>
 						<executions>
 
 							<execution>
 								<id>html</id>
-								<phase>generate-resources</phase>
+								<phase>package</phase>
 								<goals>
 									<goal>process-asciidoc</goal>
 								</goals>
@@ -180,6 +185,9 @@
 										<numbered>true</numbered>
 										<sectanchors>true</sectanchors>
 									</attributes>
+									<requires>
+										<require>asciidoctor-diagram</require>
+									</requires>
 								</configuration>
 							</execution>
 
