@@ -3,7 +3,7 @@
 
 	<groupId>de.tudresden.inf.st.lab</groupId>
 	<artifactId>st-lab-parent</artifactId>
-	<version>4.1.0-SNAPSHOT</version>
+	<version>5.0.0-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
@@ -203,7 +203,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>4.1.0-SNAPSHOT</version>
+								<version>5.0.0-SNAPSHOT</version>
 							</dependency>
 						</dependencies>
 						<executions>
@@ -297,7 +297,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>4.1.0-SNAPSHOT</version>
+								<version>5.0.0-SNAPSHOT</version>
 							</dependency>
 						</dependencies>
 					</plugin>
