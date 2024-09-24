@@ -173,12 +173,12 @@
 									<backend>html5</backend>
 									<preserveDirectories>true</preserveDirectories>
 									<outputDirectory>${project.build.directory}/generated-docs/html</outputDirectory>
-									<sectids>false</sectids>
-									<sourceHighlighter>prettify</sourceHighlighter>
 									<attributes>
 										<icons>font</icons>
 										<numbered>true</numbered>
 										<sectanchors>true</sectanchors>
+										<sectids>false</sectids>
+										<source-highlighter>prettify</source-highlighter>
 									</attributes>
 									<requires>
 										<require>asciidoctor-diagram</require>
