@@ -12,13 +12,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.6</version>
+		<version>4.0.0-RC2</version>
 		<relativePath />
 	</parent>
 
 	<properties>
-		<java.version>21</java.version>
-		<spring-modulith.version>1.4.3</spring-modulith.version>
+		<java.version>25</java.version>
+		<spring-modulith.version>2.0.0-RC1</spring-modulith.version>
 		<salespoint.version>11.0.0-SNAPSHOT</salespoint.version>
 		<sonar-plugin.version>5.2.0.4988</sonar-plugin.version>
 	</properties>
@@ -64,8 +64,14 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 
@@ -83,14 +89,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>nz.net.ultraq.thymeleaf</groupId>
-			<artifactId>thymeleaf-layout-dialect</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>org.webjars</groupId>
-			<artifactId>webjars-locator-core</artifactId>
+			<artifactId>webjars-locator-lite</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 
