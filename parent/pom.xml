@@ -20,7 +20,7 @@
 		<java.version>25</java.version>
 		<spring-modulith.version>2.0.0-RC1</spring-modulith.version>
 		<salespoint.version>11.0.0-SNAPSHOT</salespoint.version>
-		<sonar-plugin.version>5.2.0.4988</sonar-plugin.version>
+		<sonar-plugin.version>5.8.0.7211</sonar-plugin.version>
 	</properties>
 
 	<dependencyManagement>
