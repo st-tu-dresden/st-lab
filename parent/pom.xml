@@ -12,15 +12,16 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.0.0-RC2</version>
+		<version>4.1.1</version>
 		<relativePath />
 	</parent>
 
 	<properties>
 		<java.version>25</java.version>
-		<spring-modulith.version>2.0.0-RC1</spring-modulith.version>
+		<spring-modulith.version>2.1.1</spring-modulith.version>
 		<salespoint.version>11.0.0-SNAPSHOT</salespoint.version>
 		<sonar-plugin.version>5.8.0.7211</sonar-plugin.version>
+        <selenide.version>7.18.1</selenide.version>
 	</properties>
 
 	<dependencyManagement>
@@ -55,6 +56,11 @@
 			<scope>runtime</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-h2console</artifactId>
+        </dependency>
+
 		<!-- Tests -->
 
 		<dependency>
@@ -81,6 +87,12 @@
 			<scope>test</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
+            <scope>test</scope>
+        </dependency>
 		<!-- Web -->
 
 		<dependency>
@@ -152,17 +164,17 @@
 					<plugin>
 						<groupId>org.asciidoctor</groupId>
 						<artifactId>asciidoctor-maven-plugin</artifactId>
-						<version>3.0.0</version>
+						<version>3.2.0</version>
 						<dependencies>
 							<dependency>
 								<groupId>org.asciidoctor</groupId>
 								<artifactId>asciidoctorj-diagram</artifactId>
-								<version>3.0.1</version>
+								<version>3.2.1</version>
 							</dependency>
 							<dependency>
 								<groupId>org.asciidoctor</groupId>
 								<artifactId>asciidoctorj-diagram-plantuml</artifactId>
-								<version>1.2025.3</version>
+								<version>1.2026.2</version>
 							</dependency>
 						</dependencies>
 						<executions>
@@ -203,7 +215,7 @@
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>5.2.0-SNAPSHOT</version>
+								<version>6.0.0-SNAPSHOT</version>
 							</dependency>
 						</dependencies>
 						<executions>
@@ -228,7 +240,7 @@
 					<plugin>
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
-						<version>0.8.12</version>
+						<version>0.8.15</version>
 						<configuration>
 							<destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
 							<dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
@@ -292,12 +304,12 @@
 							<dependency>
 								<groupId>com.buschmais.jqassistant.plugin</groupId>
 								<artifactId>spring</artifactId>
-								<version>1.10.1</version>
+								<version>1.12.2</version>
 							</dependency>
 							<dependency>
 								<groupId>de.tudresden.inf.st.lab</groupId>
 								<artifactId>st-lab-resources</artifactId>
-								<version>5.2.0-SNAPSHOT</version>
+								<version>6.0.0-SNAPSHOT</version>
 							</dependency>
 						</dependencies>
 					</plugin>
